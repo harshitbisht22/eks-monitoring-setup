@@ -32,9 +32,11 @@ helm install prometheus prometheus-community/prometheus \
   --set alertmanager.persistentVolume.enabled=false
 ```
 
-![Prometheus Install](screenshots/prometheus-install.png)  
+![Prometheus Install](screenshots/%20prometheus.png) 
+
 📦 Prometheus installation response:  
-![Prometheus Response](screenshots/prometheus-install-response.png)
+
+![Prometheus Response](screenshots/%20prometheus-install-response.png)
 
 ---
 
@@ -57,8 +59,10 @@ helm install grafana grafana/grafana \
   --set service.type=NodePort
 ```
 
-![Grafana Install](screenshots/grafana-install.png)  
+![Grafana Response](screenshots/%20grafana-command.png)
+
 📦 Grafana installation response:  
+
 ![Grafana Response](screenshots/grafana-install-response.png)
 
 ---
@@ -95,6 +99,7 @@ kubectl get svc -n monitoring
 - **Username**: `admin`
 - **Password**: `admin`
 
+
 ![Grafana Login](screenshots/grafana-login.png)
 
 ---
@@ -113,7 +118,9 @@ http://prometheus-server.monitoring.svc.cluster.local
 5. Click **Save & Test**
 
 ![Add Prometheus](screenshots/grafana-add-prometheus.png)  
-![Data Source Page](screenshots/grafana-datasource-main-page.png)  
+
+![Data Source Page](screenshots/grafana-datasource-main-page.png) 
+
 ![Save and Test](screenshots/save-and-test-promethues.png)
 
 ---
@@ -125,6 +132,7 @@ http://prometheus-server.monitoring.svc.cluster.local
 3. Click **Load**
 
 ![Dashboard Import](screenshots/import-grafana-dashboard.png)  
+
 ![Dashboard ID](screenshots/adding-grafana-dashboard-id.png)
 
 4. Select the Prometheus datasource created earlier
@@ -133,7 +141,7 @@ http://prometheus-server.monitoring.svc.cluster.local
 
 ✅ Your EKS monitoring dashboard should now be visible:
 
-![EKS Dashboard](screenshots/eks-dasboard.png)
+![EKS Dashboard](screenshots/eks-final-dashboard.png)
 
 ---
 
